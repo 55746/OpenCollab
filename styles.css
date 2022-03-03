@@ -21,6 +21,7 @@ body {
   text-align: left;
   top: 0;
   font-family: "UniSansW01-Heavy";
+  /*Nft Website*/
 }
 
 #nav-menu{
@@ -44,6 +45,7 @@ body {
 nav ul li a{
   color: #868686;
   font-size: 30px;
+  /*Options*/
 }
 
 #nav-button {
