@@ -6,7 +6,7 @@
     box-sizing:border-box;
   }
   
-  #navbar {
+  .navbar {
     background: black;
     height: 60px;
      width: 100%;
@@ -15,19 +15,19 @@
     top: 0;
   }
   
-  #nav-menu{
+  .nav-menu{
     color: #ffe135;
     font-size: 50px;
     line-height: 60px;
   }
   
   
-  #navbar ul{
+  .navbar ul{
     float: right;
     margin-right: 20px;
   }
   
-  #navbar ul li{
+  .navbar ul li{
     display: inline-block;
     line-height: 60px;
     margin: 0 5px;
@@ -38,13 +38,13 @@
     font-size: 30px;
   }
   
-  #nav-button {
+  .nav-button {
     background-color: black;
     border: 0px;
     border-radius: 25px;
   }
   
-  #nav-button:hover {
+  .nav-button:hover {
     animation-name: hovering;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
