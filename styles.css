@@ -3,78 +3,123 @@ body {
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing:border-box;
-}
-
-
-
-.navbar {
-  background: #99aab5;
-  height: 60px;
-   width: 100%;
-  position: fixed;
-  text-align: left;
-  top: 0;
-}
-
-.nav-menu{
-  color: #23272a;
-  font-size: 50px;
-  line-height: 60px;
-}
-
-
-.navbar ul{
-  float: right;
-  margin-right: 20px;
-}
-
-.navbar ul li{
-  display: inline-block;
-  line-height: 60px;
-  margin: 0 5px;
-} 
-
-nav ul li a{
-  color: #23272a;
-  font-size: 30px;
-}
-
-.nav-button {
-  background-color: #99aab5;
-  border: 2px solid #23272a;
-  border-radius: 15px;
-}
-
-.nav-button:hover {
-  animation-name: hovering;
-  animation-duration: 500ms;
-  animation-fill-mode: forwards;
-}
-
-@keyframes hovering{
-  90% {
-    background-color: #04D1C3;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing:border-box;
   }
-  100% {
-    background-color: #04D1C3;
-  }
-}
 
+
+  
+  .navbar {
+    background: #99aab5;
+    height: 60px;
+     width: 100%;
+    position: fixed;
+    text-align: left;
+    top: 0;
+  }
+  
+  .nav-menu{
+    color: #23272a;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  
+  
+  .navbar ul{
+    float: right;
+    margin-right: 20px;
+  }
+  
+  .navbar ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+  } 
+  
+  nav ul li a{
+    color: #23272a;
+    font-size: 30px;
+  }
+  
+  .nav-button {
+    background-color: #99aab5;
+    border: 2px solid #23272a;
+    border-radius: 15px;
+  }
+  
+  .nav-button:hover {
+    animation-name: hovering;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes hovering{
+    90% {
+      background-color: #04D1C3;
+    }
+    100% {
+      background-color: #04D1C3;
+    }
+  }
+
+.nft-container {
+  padding-left: 350px;
+}
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 106.25px);
-  grid-gap: 298px;
+  grid-gap: 100px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(4, 106.25px);
+  grid-gap: 100px;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: repeat(4, 106.25px);
+  grid-gap: 100px;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-template-columns: repeat(4, 106.25px);
+  grid-gap: 100px;
 }
 
 .grid-cell {
-  height: 250px;
-  width: 320px;
+  height: 120px;
+  width: 190px;
+  border-radius: 3px;
+  background: #acaaaa;
+  text-align: right, bottom;
+}
+
+.grid-cell2 {
+  height: 120px;
+  width: 190px;
+  border-radius: 3px;
+  background: #acaaaa;
+  text-align: right, bottom;
+}
+
+.grid-cell3 {
+  height: 120px;
+  width: 190px;
+  border-radius: 3px;
+  background: #acaaaa;
+  text-align: right, bottom;
+}
+
+.grid-cell4 {
+  height: 120px;
+  width: 190px;
   border-radius: 3px;
   background: #acaaaa;
   text-align: right, bottom;
