@@ -1,98 +1,97 @@
+@import url(//db.onlinewebfonts.com/c/bcbeab8fa70d1d1899cd5c6993cd67b9?family=UniSansW01-Heavy);
+@font-face {font-family: "UniSansW01-Heavy"; src: url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.eot"); src: url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.woff") format("woff"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.svg#UniSansW01-Heavy") format("svg"); }
 body {
   padding-top: 110px;
 }
-
+@keyframes hovering{
+  90% {
+    background-color: #04D1C3;
+  }
+  100% {
+    background-color: #04D1C3;
+  }
+}
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing:border-box;
-  }
-
-
-  
-  .navbar {
-    background: #99aab5;
-    height: 60px;
-     width: 100%;
-    position: fixed;
-    text-align: left;
-    top: 0;
-  }
-  
-  .nav-menu{
-    color: #23272a;
-    font-size: 50px;
-    line-height: 60px;
-  }
-  
-  
-  .navbar ul{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing:border-box;
+}
+nav ul li a{
+    color: #868686;
+    font-size: 30px;
+}
+.navbar {
+  background: rgb(32, 32, 32);
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  text-align: left;
+  top: 0;
+}
+.navbar ul{
     float: right;
     margin-right: 20px;
-  }
-  
-  .navbar ul li{
+}
+.navbar ul li{
     display: inline-block;
     line-height: 60px;
     margin: 0 5px;
-  } 
-  
-  nav ul li a{
-    color: #23272a;
+} 
+.nav-text{
+    font-family: "UniSansW01-Heavy"; 
+ }
+ 
+ 
+ /* .nav-div{
+  margin: right 100px ;
+ } 
+ IM TRYING TO MAKE THE NAV HAVE THE FONT 
+ 
+ */
+
+
+
+.nav-menu{
+    color: #868686;
     font-size: 30px;
-  }
-  
-  .nav-button {
+    line-height: 60px;
+    position:absolute; left:80px; top:-1px;
+}
+.nav-button {
     background-color: #99aab5;
     border: 2px solid #23272a;
     border-radius: 15px;
-  }
-  
-  .nav-button:hover {
+}
+.nav-button:hover {
     animation-name: hovering;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
-  }
-  
-  @keyframes hovering{
-    90% {
-      background-color: #04D1C3;
-    }
-    100% {
-      background-color: #04D1C3;
-    }
-  }
-
+}
 .nft-container {
   padding-left: 350px;
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 106.25px);
   grid-gap: 100px;
 }
-
 .grid-container2 {
   display: grid;
   grid-template-columns: repeat(4, 106.25px);
   grid-gap: 100px;
 }
-
 .grid-container3 {
   display: grid;
   grid-template-columns: repeat(4, 106.25px);
   grid-gap: 100px;
 }
-
 .grid-container4 {
   display: grid;
   grid-template-columns: repeat(4, 106.25px);
   grid-gap: 100px;
 }
-
 .grid-cell {
   height: 120px;
   width: 190px;
@@ -100,7 +99,6 @@ body {
   background: #acaaaa;
   text-align: right, bottom;
 }
-
 .grid-cell2 {
   height: 120px;
   width: 190px;
@@ -108,7 +106,6 @@ body {
   background: #acaaaa;
   text-align: right, bottom;
 }
-
 .grid-cell3 {
   height: 120px;
   width: 190px;
@@ -116,11 +113,10 @@ body {
   background: #acaaaa;
   text-align: right, bottom;
 }
-
 .grid-cell4 {
   height: 120px;
   width: 190px;
   border-radius: 3px;
   background: #acaaaa;
   text-align: right, bottom;
-}
+} 
