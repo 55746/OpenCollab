@@ -33,6 +33,7 @@ nav ul li a{
 .navbar ul{
     float: right;
     margin-right: 20px;
+    margin-top: 10px;
 }
 .navbar ul li{
     display: inline-block;
@@ -42,17 +43,9 @@ nav ul li a{
 .nav-text{
     font-family: "UniSansW01-Heavy"; 
  }
- 
- 
- /* .nav-div{
+ .nav-div{
   margin: right 100px ;
- } 
- IM TRYING TO MAKE THE NAV HAVE THE FONT 
- 
- */
-
-
-
+ }
 .nav-menu{
     color: #868686;
     font-size: 30px;
