@@ -5,14 +5,12 @@
   list-style: none;
   box-sizing:border-box;
 }
-#menu-button {
-border: 0px;
-animation-name: none;
-}
+
+
 
 .navbar {
   background: #99aab5;
-  height: 70px;
+  height: 60px;
    width: 100%;
   position: fixed;
   text-align: left;
