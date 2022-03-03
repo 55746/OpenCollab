@@ -1,87 +1,25 @@
 <html>
   <head>
+    <link rel="stylesheet" href="styles.css">
     <title> NFTWebsite </title>
-    <style>
-      * {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing:border-box;
-}
 
-#navbar {
-  background: black;
-  height: 60px;
-   width: 100%;
-  position: fixed;
-  text-align: left;
-  top: 0;
-}
-
-#nav-menu{
-  color: #ffe135;
-  font-size: 50px;
-  line-height: 60px;
-}
-
-
-#navbar ul{
-  float: right;
-  margin-right: 20px;
-}
-
-#navbar ul li{
-  display: inline-block;
-  line-height: 60px;
-  margin: 0 5px;
-} 
-
-nav ul li a{
-  color: #ffe135;
-  font-size: 30px;
-}
-
-#nav-button {
-  background-color: black;
-  border: 0px;
-  border-radius: 25px;
-}
-
-#nav-button:hover {
-  animation-name: hovering;
-  animation-duration: 500ms;
-  animation-fill-mode: forwards;
-}
-
-@keyframes hovering{
-  90% {
-    background-color: #04D1C3;
-  }
-  100% {
-    background-color: #04D1C3;
-  }
-}
-    </style>
 </head>
 <body>
-    <nav id="navbar">
-  <lable id="nav-menu">
-    Nft Website
-  </label>
-  <ul>
-    <li>
-      <button type='button' id="nav-button"> <a href='#Home'>Home</button>
-    </li>
-    <li>
-      <button type='button' id="nav-button"> <a href='#how-it-works'>Info</button>
-    </li>
-    <li>
-      <button type='button' id="nav-button"> <a href='#pricing'>Price</button> 
-    </li>
-  </ul>
-</nav>
-
+  <div class="container">
+    <ul>
+      <li>
+        <button type='button' id="nav-button"> <a href='#Home'>Home</button>
+        </li>
+        <li>
+          <button type='button' id="nav-button"> <a href='#how-it-works'>Info</button>
+          </li>
+          <li>
+            <button type='button' id="nav-button"> <a href='#pricing'>Price</button> 
+            </li>
+          </ul>
+        </nav>
+      </div>
+        
 </body>
 
 </html>
