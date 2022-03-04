@@ -1,13 +1,6 @@
 @import url(//db.onlinewebfonts.com/c/bcbeab8fa70d1d1899cd5c6993cd67b9?family=UniSansW01-Heavy);
 @font-face {font-family: "UniSansW01-Heavy"; src: url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.eot"); src: url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.woff") format("woff"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.svg#UniSansW01-Heavy") format("svg"); }
-@keyframes hovering{
-  90% {
-    background-color: #04D1C3;
-  }
-  100% {
-    background-color: #04D1C3;
-  }
-}
+
 
 body {
   padding-top: 110px;
@@ -68,60 +61,42 @@ nav ul li a{
   animation-name: hovering;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
-
 }
 
-
+@keyframes hovering{
+  90% {
+    background-color: #04D1C3;
+  }
+  100% {
+    background-color: #04D1C3;
+  }
+}
 .nft-container {
-  padding-left: 350px;
+  padding-left: 380px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 106.25px);
-  grid-gap: 100px;
-}
-
-.grid-container2 {
-  display: grid;
-  grid-template-columns: repeat(4, 106.25px);
-  grid-gap: 100px;
-}
-.grid-container3 {
-  display: grid;
-  grid-template-columns: repeat(4, 106.25px);
-  grid-gap: 100px;
-}
-.grid-container4 {
-  display: grid;
-  grid-template-columns: repeat(4, 106.25px);
-  grid-gap: 100px;
-}
 .grid-cell {
   height: 120px;
   width: 190px;
   border-radius: 3px;
+  border: 1px solid black;
   background: #acaaaa;
   text-align: right, bottom;
 }
-.grid-cell2 {
-  height: 120px;
-  width: 190px;
-  border-radius: 3px;
-  background: #acaaaa;
-  text-align: right, bottom;
+
+.grid-cell:hover {
+  animation-name: bigger;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  z-index: 2;
 }
-.grid-cell3 {
-  height: 120px;
-  width: 190px;
-  border-radius: 3px;
-  background: #acaaaa;
-  text-align: right, bottom;
+
+
+@keyframes bigger{
+  
+  100% {
+    width: 240px;
+    height: 220px;
+  }
 }
-.grid-cell4 {
-  height: 120px;
-  width: 190px;
-  border-radius: 3px;
-  background: #acaaaa;
-  text-align: right, bottom;
-} 
