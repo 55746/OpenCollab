@@ -72,14 +72,14 @@ nav ul li a{
   }
 }
 .grid-container {
-  padding-left: 280px;
+  padding-left: 180px;
   display: flex-box;
   float: center;
 }
 
 
 .grid-cell {
-  height: 120px;
+  height: 190px;
   width: 190px;
   border-radius: 3px;
   border: 1px solid black;
@@ -109,10 +109,7 @@ nav ul li a{
   border: 2px solid black;
   float: left;
   margin-top: 10px;
-  height: 82vh;
-  width: 100px;
   text-align: center;
-  padding-top: 40vh;
 }
 
 .more {
@@ -120,10 +117,15 @@ nav ul li a{
   border: 2px solid black;
   float: right;
   margin-top: 10px;
-  height: 82vh;
-  width: 100px;
   text-align: center;
-  padding-top: 40vh;
+}
+
+.moreNfts,
+.more {
+  padding-left: 200px;
+  padding-top: 500px;
+  height: 82vh;
+  width: 50px;
 }
 
 .morNfts,
