@@ -21,6 +21,15 @@ body {
 }
 
 
+/* THIS IS THE DASHED LINES */
+div{
+  border-style: dashed;color: red;
+}
+/*  */
+
+
+/* THIS IS THE NAV */
+
 .navbar {
   background: black;
   height: 60px;
@@ -29,34 +38,26 @@ body {
   text-align: left;
   top: 0;
   font-family: "UniSansW01-Heavy";
-  /*Nft Website*/
 }
-
 .nav-menu{
   color: #868686;
   font-size: 50px;
   line-height: 60px;
   margin-left: 15px;
 }
-
-
 .navbar ul{
   float: right;
   margin-right: 20px;
 }
-
 .navbar ul li{
   display: inline-block;
   line-height: 60px;
   margin: 0 5px;
 } 
-
-nav ul li a{
+nav ul li .topbuttons{
   color: #868686;
   font-size: 30px;
-  /*Options*/
 }
-
 .nav-button {
   background-color: black;
   border: 0px;
@@ -64,26 +65,67 @@ nav ul li a{
   font-family: "UniSansW01-Heavy";
   margin-top: 10px;
 }
-
 .nav-button:hover {
   animation-name: hovering;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
-
 }
 
+/* THIS IS INSIDE THE PAGE OR THE GRID */
 
 .insidepagecontainer {
   padding-left: 350px;
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 106.25px);
   grid-gap: 100px;
 }
+.grid-cell {
+  height: 120px;
+  width: 190px;
+  border-radius: 3px;
+  background: #acaaaa;
+  text-align: right, bottom;
+}
+.sidebar {
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #d3d3d3 5%, #707070 100%);
+	background-color:#000000;
+	border-radius:3px;
+	border:1px solid #5f5f5f;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:10px 102px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+  /* margin-top:0; */
+  width:15%;
+}
+.sidebarcontainer{
+  height: 484px;
+  width: 15%;
+  background-color: powderblue;
+  position:fixed
+}
+.sidebar:hover{
+  border: 2px solid #a0a0a0; /* Green */
+}
+/* TRYING TO CREATE SEPERATE BUTTONS */
 
-.grid-container2 {
+.liborder1 .liborder2{
+  
+}
+
+
+
+
+/* THIS IS CODE THAT HAS BEEN SUCCESFULLY REMOVED/SHORTENED, AWAITING DELETION BY CREATOR */
+/* VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
+/* .grid-container2 {
   display: grid;
   grid-template-columns: repeat(4, 106.25px);
   grid-gap: 100px;
@@ -97,15 +139,8 @@ nav ul li a{
   display: grid;
   grid-template-columns: repeat(4, 106.25px);
   grid-gap: 100px;
-}
-.grid-cell {
-  height: 120px;
-  width: 190px;
-  border-radius: 3px;
-  background: #acaaaa;
-  text-align: right, bottom;
-}
-.grid-cell2 {
+} */
+/* .grid-cell2 {
   height: 120px;
   width: 190px;
   border-radius: 3px;
@@ -125,33 +160,4 @@ nav ul li a{
   border-radius: 3px;
   background: #acaaaa;
   text-align: right, bottom;
-} 
-
-.sidebar {
-	box-shadow:inset 0px 1px 0px 0px #a6827e;
-	background:linear-gradient(to bottom, #7d5d3b 5%, #3ee0e0 100%);
-	background-color:#7d5d3b;
-	border-radius:3px;
-	border:1px solid #54381e;
-	display:block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:13px;
-	padding:10px 102px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #4d3534;
-  /* margin-top:0; */
-  float: top;
-  width:15%;
-
-}
-.sidebar:hover {
-	background:linear-gradient(to bottom, #3ee0e0 5%, #7d5d3b 100%);
-	background-color:#3ee0e0;
-}
-.sidebar:active {
-	position:relative;
-	top:1px;
-}
-
+}  */
