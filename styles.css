@@ -1,7 +1,13 @@
 @import url(//db.onlinewebfonts.com/c/bcbeab8fa70d1d1899cd5c6993cd67b9?family=UniSansW01-Heavy);
 @font-face {font-family: "UniSansW01-Heavy"; src: url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.eot"); src: url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.woff") format("woff"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.svg#UniSansW01-Heavy") format("svg"); }
-
-
+@keyframes hovering{
+  90% {
+    background-color: #04D1C3;
+  }
+  100% {
+    background-color: #04D1C3;
+  }
+}
 body {
   padding-top: 110px;
 }
@@ -12,43 +18,37 @@ body {
   list-style: none;
   box-sizing:border-box;
 }
-
-
 .navbar {
+  /* Z INDEX IS WHAT MAKES LAYERS, SINCE THIS HAS ZINDEX 2, ITS ON TOP OF ZINDEX 1 */
+  z-index: 2;
   background: black;
   height: 60px;
-   width: 100%;
+  width: 100%;
   position: fixed;
   text-align: left;
   top: 0;
   font-family: "UniSansW01-Heavy";
   /*Nft Website*/
 }
-
 .nav-menu{
   color: #868686;
   font-size: 50px;
   line-height: 60px;
 }
-
-
 .navbar ul{
   float: right;
   margin-right: 20px;
 }
-
 .navbar ul li{
   display: inline-block;
   line-height: 60px;
   margin: 0 5px;
 } 
-
 nav ul li a{
   color: #868686;
   font-size: 30px;
   /*Options*/
 }
-
 .nav-button {
   background-color: black;
   border: 0px;
@@ -56,28 +56,20 @@ nav ul li a{
   font-family: "UniSansW01-Heavy";
   margin-top: 10px;
 }
-
 .nav-button:hover {
   animation-name: hovering;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
 }
-
-@keyframes hovering{
-  90% {
-    background-color: #04D1C3;
-  }
-  100% {
-    background-color: #04D1C3;
-  }
-}
+.nftcontainer{
+margin-left: auto;
+margin-right:auto;
+} 
 .grid-container {
-  padding-left: 280px;
+  padding-left:40px;
   display: flex-box;
   float: center;
 }
-
-
 .grid-cell {
   height: 120px;
   width: 190px;
@@ -86,35 +78,6 @@ nav ul li a{
   background: #acaaaa;
   text-align: right, bottom;
 }
-
-.grid-cell:hover {
-  animation-name: bigger;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  position: absolute;
-  z-index: 2;
-}
-
-
-@keyframes bigger{
-  
-  100% {
-    width: 240px;
-    height: 220px;
-  }
-}
-
-.moreNfts {
-  display: flex-box; 
-  border: 2px solid black;
-  float: left;
-  margin-top: 10px;
-  height: 82vh;
-  width: 100px;
-  text-align: center;
-  padding-top: 40vh;
-}
-
 .more {
   display: flex-box; 
   border: 2px solid black;
@@ -125,9 +88,106 @@ nav ul li a{
   text-align: center;
   padding-top: 40vh;
 }
-
+.moreNfts {
+  display: flex-box; 
+  border: 2px solid black;
+  float: left;
+  margin-top: 10px;
+  height: 82vh;
+  width: fit-content;
+  text-align: center;
+  position: relative;
+  /* padding-top: 40vh; */
+}
 .morNfts,
 .grid-container,
 .more{
   display: inline-block;
 }
+.sidebar {
+  /* THIS IS WHERE ZINDEX 1 IS */
+  z-index: 1;
+  background-color:#838383;
+	border-radius:3px;
+	border:1px solid #707070;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:10px 102px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534; */
+  width:100px;
+  height:40px;
+  left:10px;
+  /* top:100px; */
+	/* box-shadow:inset 0px 1px 0px 0px #a6827e; 
+  float: top;
+	background:linear-gradient(to bottom, #707070 5%, #9c9c9c 100%); 
+  margin-top:0; 
+  width:15%; 
+  position: static; */
+}
+.sidebar:hover {
+  background:linear-gradient(to bottom, #3ee0e0 5%, #707070 100%);
+	background-color:#3ee0e0;
+}
+.sidebar:active {
+  position:relative;
+	top:1px;
+}
+table{
+  position:sticky;
+}
+
+
+/* SHINE EFFECT */
+.shine figure {
+  position: relative;
+  overflow: hidden;
+}
+.shine figure::before {
+  position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.shine figure:hover::before {
+  -webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+	}
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+	}
+}
+
+
+
+/* @keyframes bigger{
+  100% {
+    width: 240px;
+    height: 220px;
+  }
+} */
+/* .grid-cell:hover {
+  animation-name: bigger;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  z-index: 2;
+} */
