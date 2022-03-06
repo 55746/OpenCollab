@@ -10,6 +10,7 @@
 }
 body {
   padding-top: 110px;
+  padding-bottom:150px;
 }
 * {
   padding: 0;
@@ -18,8 +19,8 @@ body {
   list-style: none;
   box-sizing:border-box;
 }
+/* Z INDEX IS WHAT MAKES LAYERS, SINCE THIS HAS ZINDEX 2, ITS ON TOP OF ZINDEX 1 */
 .navbar {
-  /* Z INDEX IS WHAT MAKES LAYERS, SINCE THIS HAS ZINDEX 2, ITS ON TOP OF ZINDEX 1 */
   z-index: 2;
   background: black;
   height: 60px;
@@ -89,14 +90,14 @@ nav ul li a{
   padding-top: 40vh;
 }
 .moreNfts {
-  display: flex-box; 
+  display: inline-block; 
   border: 2px solid black;
   float: left;
-  margin-top: 10px;
-  height: 82vh;
   width: fit-content;
   text-align: center;
   position: relative;
+   margin-top: 25px; 
+  /* height: 82vh; */
   /* padding-top: 40vh; */
 }
 .morNfts,
