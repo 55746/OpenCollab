@@ -62,8 +62,8 @@ nav ul li a{
   animation-fill-mode: forwards;
 }
 .nftcontainer{
-margin-left: auto;
-margin-right:auto;
+  margin-left: auto;
+  margin-right:auto;
 } 
 .grid-container {
   padding-left:40px;
@@ -107,7 +107,7 @@ margin-right:auto;
 .sidebar {
   /* THIS IS WHERE ZINDEX 1 IS */
   z-index: 1;
-  background-color:#838383;
+  background-color:#000000;
 	border-radius:3px;
 	border:1px solid #707070;
 	display:block;
@@ -121,7 +121,7 @@ margin-right:auto;
   width:100px;
   height:40px;
   left:10px;
-  /* top:100px; */
+  /* top:100px;
 	/* box-shadow:inset 0px 1px 0px 0px #a6827e; 
   float: top;
 	background:linear-gradient(to bottom, #707070 5%, #9c9c9c 100%); 
@@ -129,8 +129,11 @@ margin-right:auto;
   width:15%; 
   position: static; */
 }
+.vendortext{
+  color: #b6b6b6;
+}
 .sidebar:hover {
-  background:linear-gradient(to bottom, #3ee0e0 5%, #707070 100%);
+  background:linear-gradient(to bottom, #3ee0e0 5%, #292929 100%);
 	background-color:#3ee0e0;
 }
 .sidebar:active {
@@ -140,7 +143,6 @@ margin-right:auto;
 table{
   position:sticky;
 }
-
 
 /* SHINE EFFECT */
 .shine figure {
