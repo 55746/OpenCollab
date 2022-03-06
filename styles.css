@@ -1,4 +1,143 @@
+
 @import url(//db.onlinewebfonts.com/c/bcbeab8fa70d1d1899cd5c6993cd67b9?family=UniSansW01-Heavy);
+@font-face {font-family: "UniSansW01-Heavy"; src: url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.eot"); src: url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.woff") format("woff"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.svg#UniSansW01-Heavy") format("svg"); }
+
+
+body {
+  padding-top: 110px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing:border-box;
+}
+
+
+.navbar {
+  background: black;
+  height: 60px;
+   width: 100%;
+  position: fixed;
+  text-align: left;
+  top: 0;
+  font-family: "UniSansW01-Heavy";
+  /*Nft Website*/
+}
+
+.nav-menu{
+  color: #868686;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+
+.navbar ul{
+  float: right;
+  margin-right: 20px;
+}
+
+.navbar ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+} 
+
+nav ul li a{
+  color: #868686;
+  font-size: 30px;
+  /*Options*/
+}
+
+.nav-button {
+  background-color: black;
+  border: 0px;
+  border-radius: 15px;
+  font-family: "UniSansW01-Heavy";
+  margin-top: 10px;
+}
+
+.nav-button:hover {
+  animation-name: hovering;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hovering{
+  90% {
+    background-color: #04D1C3;
+  }
+  100% {
+    background-color: #04D1C3;
+  }
+}
+.grid-container {
+  padding-left: 280px;
+  display: flex-box;
+  float: center;
+}
+
+
+.grid-cell {
+  height: 120px;
+  width: 190px;
+  border-radius: 3px;
+  border: 1px solid black;
+  background: #acaaaa;
+  text-align: right, bottom;
+}
+
+.grid-cell:hover {
+  animation-name: bigger;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  z-index: 2;
+}
+
+
+@keyframes bigger{
+  
+  100% {
+    width: 240px;
+    height: 220px;
+  }
+}
+
+.moreNfts {
+  display: flex-box; 
+  border: 2px solid black;
+  float: left;
+  margin-top: 10px;
+  height: 82vh;
+  width: 100px;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.more {
+  display: flex-box; 
+  border: 2px solid black;
+  float: right;
+  margin-top: 10px;
+  height: 82vh;
+  width: 100px;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.morNfts,
+.grid-container,
+.more{
+  display: inline-block;
+}
+
+
+
+
+
+/* @import url(//db.onlinewebfonts.com/c/bcbeab8fa70d1d1899cd5c6993cd67b9?family=UniSansW01-Heavy);
 @font-face {font-family: "UniSansW01-Heavy"; src: url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.eot"); src: url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.woff") format("woff"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bcbeab8fa70d1d1899cd5c6993cd67b9.svg#UniSansW01-Heavy") format("svg"); }
 @keyframes hovering{
   90% {
@@ -21,15 +160,6 @@ body {
 }
 
 
-/* THIS IS THE DASHED LINES */
-div{
-  border-style: dashed;color: red;
-}
-/*  */
-
-
-/* THIS IS THE NAV */
-
 .navbar {
   background: black;
   height: 60px;
@@ -37,27 +167,35 @@ div{
   position: fixed;
   text-align: left;
   top: 0;
-  font-family: "UniSansW01-Heavy";
-}
+  font-family: "UniSansW01-Heavy"; */
+  /*Nft Website*/
+/* }
+
 .nav-menu{
   color: #868686;
   font-size: 50px;
   line-height: 60px;
   margin-left: 15px;
 }
+
+
 .navbar ul{
   float: right;
   margin-right: 20px;
 }
+
 .navbar ul li{
   display: inline-block;
   line-height: 60px;
   margin: 0 5px;
 } 
-nav ul li .topbuttons{
+
+nav ul li a{
   color: #868686;
   font-size: 30px;
-}
+  /*Options*/
+/* }
+
 .nav-button {
   background-color: black;
   border: 0px;
@@ -65,67 +203,26 @@ nav ul li .topbuttons{
   font-family: "UniSansW01-Heavy";
   margin-top: 10px;
 }
+
 .nav-button:hover {
   animation-name: hovering;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
+
 }
 
-/* THIS IS INSIDE THE PAGE OR THE GRID */
 
 .insidepagecontainer {
   padding-left: 350px;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 106.25px);
   grid-gap: 100px;
 }
-.grid-cell {
-  height: 120px;
-  width: 190px;
-  border-radius: 3px;
-  background: #acaaaa;
-  text-align: right, bottom;
-}
-.sidebar {
-  box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #d3d3d3 5%, #707070 100%);
-	background-color:#000000;
-	border-radius:3px;
-	border:1px solid #5f5f5f;
-	display:block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:13px;
-	padding:10px 102px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #4d3534;
-  /* margin-top:0; */
-  width:15%;
-}
-.sidebarcontainer{
-  height: 484px;
-  width: 15%;
-  background-color: powderblue;
-  position:fixed
-}
-.sidebar:hover{
-  border: 2px solid #a0a0a0; /* Green */
-}
-/* TRYING TO CREATE SEPERATE BUTTONS */
 
-.liborder1 .liborder2{
-  
-}
-
-
-
-
-/* THIS IS CODE THAT HAS BEEN SUCCESFULLY REMOVED/SHORTENED, AWAITING DELETION BY CREATOR */
-/* VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
-/* .grid-container2 {
+.grid-container2 {
   display: grid;
   grid-template-columns: repeat(4, 106.25px);
   grid-gap: 100px;
@@ -139,8 +236,15 @@ nav ul li .topbuttons{
   display: grid;
   grid-template-columns: repeat(4, 106.25px);
   grid-gap: 100px;
-} */
-/* .grid-cell2 {
+}
+.grid-cell {
+  height: 120px;
+  width: 190px;
+  border-radius: 3px;
+  background: #acaaaa;
+  text-align: right, bottom;
+}
+.grid-cell2 {
   height: 120px;
   width: 190px;
   border-radius: 3px;
@@ -160,4 +264,33 @@ nav ul li .topbuttons{
   border-radius: 3px;
   background: #acaaaa;
   text-align: right, bottom;
-}  */
+} 
+
+.sidebar {
+	box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #3ee0e0 100%);
+	background-color:#7d5d3b;
+	border-radius:3px;
+	border:1px solid #54381e;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:10px 102px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534; */
+  /* margin-top:0; */
+  /* float: top;
+  width:15%;
+
+}
+.sidebar:hover {
+	background:linear-gradient(to bottom, #3ee0e0 5%, #7d5d3b 100%);
+	background-color:#3ee0e0;
+}
+.sidebar:active {
+	position:relative;
+	top:1px;
+}
+ */ */
