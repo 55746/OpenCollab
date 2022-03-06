@@ -97,6 +97,7 @@ nav ul li a{
   text-align: center;
   position: relative;
    margin-top: 25px; 
+   margin-left: 30px;
   /* height: 82vh; */
   /* padding-top: 40vh; */
 }
@@ -138,8 +139,9 @@ nav ul li a{
 	background-color:#3ee0e0;
 }
 .sidebar:active {
-  position:relative;
-	top:1px;
+  background: #04D1C3;
+  top:1px;
+  /* position:relative; */
 }
 table{
   position:sticky;
