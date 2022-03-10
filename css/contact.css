@@ -62,3 +62,8 @@ nav ul li a{
   animation-duration: 500ms;
   animation-fill-mode: forwards;
 }
+
+.contact {
+  text-align: center;
+  line-height: 1.4;
+}
